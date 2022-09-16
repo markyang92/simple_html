@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My hello world!</title>
+        <link href="./practice.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript">
+            function doSomething(){
+                let a = document.getElementById("inputA").value;
+                document.getElementById("valueA").innerHTML = a;
+            }
+        </script>
+    </head>
+    <body>
+        <a href="https://google.com">google</a>
+        <hr/>
+        <img src="./images/tux.png" width="30%">
+        <br>
+        <label for="inputA">a</label>
+        <input id="inputA" value="1" onkeyup="doSomething()">
+        
+        <label for="inputB">b</label>
+        <input id="inputB" value="2" onkeyup="doSomething()">
+        <p>
+            a : <span id="valueA"></span>
+        </p>
+    </body>
+</html>
